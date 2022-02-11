@@ -12,7 +12,7 @@ namespace ConsoleApp1
             int x = 0, y = 0;
             string Z = "N";
 
-            Console.WriteLine("Orientação inicial do Robô (0,0,N)\n\n");
+            Console.WriteLine($"Orientação inicial do Robô {x} {y} {Z}\n\n");
 
             while (true)
             {
@@ -58,11 +58,7 @@ namespace ConsoleApp1
                     }
                 }
 
-
-
                 // ORIENTAÇÃO - ESQUERDA
-
-
 
                 else if (a == "e")
                 {
@@ -95,20 +91,13 @@ namespace ConsoleApp1
                 // MOVIMENTOS - M
 
                 else if (Z == "N" && a == "m")
-
                 {
                     y = y + 1;
-
                     Console.Write("\nOrientação atual do Robô {0} {1} {2}\n", x, y, Z);
-
-
                 }
 
                 else if (Z == "O" && a == "m")
-
-
                 {
-
                     if (x == 0)
                     {
                         Console.WriteLine("\nImpossível, X já é zero");
@@ -118,22 +107,14 @@ namespace ConsoleApp1
                     {
                         x = x - 1;
                         Console.Write("\nOrientação atual do Robô {0} {1} {2}\n", x, y, Z);
-
                     }
 
                 }
 
                 else if (Z == "L" && a == "m")
-
-
-                {
-
-                    
+                {                    
                         x = x + 1;
                         Console.Write("\nOrientação atual do Robô {0} {1} {2}\n", x, y, Z);
-
-
-
                 }
                 else if (Z == "S" && a == "m")
                 {
